@@ -164,7 +164,7 @@ const ServiceItem = ({ service, barbershop }: ServiceItemProps) => {
                   </Button>
                 </SheetTrigger>
 
-                <SheetContent className="p-0">
+                <SheetContent className="p-0" style={{ overflowY: "auto" }}>
                   <SheetHeader className="text-left px-5 py-6 border-b border-solid border-secondary">
                     <SheetTitle>Fazer Reserva</SheetTitle>
                   </SheetHeader>
@@ -202,7 +202,6 @@ const ServiceItem = ({ service, barbershop }: ServiceItemProps) => {
                     />
                   </div>
 
-                  {/* Mostrar lista de horários apenas se alguma data estiver selecionada */}
                   {date && (
                     <div className="flex gap-3 overflow-x-auto py-6 px-5 border-t border-solid border-secondary [&::-webkit-scrollbar]:hidden">
                       {timeList.map((time) => (
