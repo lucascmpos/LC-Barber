@@ -3,13 +3,7 @@ import Image from "next/image";
 import { Card, CardContent } from "./ui/card";
 import { MenuIcon } from "lucide-react";
 import { Button } from "./ui/button";
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "./ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import SideMenu from "./side-menu";
 import Link from "next/link";
 
