@@ -1,4 +1,4 @@
-# LCBarbers - Site para agendamentos de serviços
+# SharpCut Barbers - Site para agendamentos de serviços
 
 ## Este projeto consiste em uma aplicação feita para ter diversas barbearias, onde o usuário pode logar com o Google e agendar um serviço da barbearia desejada, assim como cancelar um serviço e também ver seus serviços agendados futuros e anteriores.
 
