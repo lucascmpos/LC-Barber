@@ -1,9 +1,14 @@
+import React from "react";
+
 const Footer = () => {
   return (
-    <div className="w-full bg-secondary py-6 px-5">
-      <p className="text-gray-400 text-xs opacity-75">
-        © 2023 Copyright <span className="font-bold">LC Barbers</span>
+    <div className="flex justify-between bg-accent px-8 py-4 text-[0.625rem] opacity-75">
+      <p>
+        © 2024 Copyright{" "}
+        <span className="font-semibold">SharpCut Barbers</span>{" "}
       </p>
+
+      <p>Feito por Lucas Campos</p>
     </div>
   );
 };

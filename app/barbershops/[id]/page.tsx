@@ -30,7 +30,6 @@ const BarbershopDetailsPage = async ({
   });
 
   if (!barbershop) {
-    // TODO: redirecionar para home page
     return null;
   }
 

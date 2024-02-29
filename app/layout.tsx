@@ -8,8 +8,8 @@ import { Toaster } from "./_components/ui/sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "LC Barbers",
-  description: "LC Barbers",
+  title: "SharpCut Barbers",
+  description: "SharpCut Barbers made by Lucas Campos",
 };
 
 export default function RootLayout({
