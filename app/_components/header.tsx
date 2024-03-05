@@ -12,10 +12,10 @@ const Header = () => {
     <Card>
       <CardContent className="p-5 justify-between flex flex-row">
         <Link href="/">
-          <div className="flex flex-row">
+          <div className="flex flex-row ">
             <Image src="/scissor.png" alt="LC Barbers" height={20} width={30} />
-            <h1 className="font-bold text-2xl flex uppercase">
-              <p className="font-extrabold text-red-800 mr-2">SharpCut </p>
+            <h1 className="font-bold md:text-2xl text-lg md:p-0 py-1 text-wrap flex uppercase">
+              <p className="font-extrabold text-red-800  mr-2">SharpCut </p>
               Barbers
             </h1>
           </div>
