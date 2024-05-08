@@ -1,4 +1,5 @@
 import React from "react";
+import { IoLogoGithub } from "react-icons/io";
 
 const Footer = () => {
   return (
@@ -8,7 +9,14 @@ const Footer = () => {
         <span className="font-semibold">SharpCut Barbers</span>{" "}
       </p>
 
-      <p>Feito por Lucas Campos</p>
+      <a
+        className="flex flex-row items-center justify-center gap-2 hover:text-red-500"
+        href="https://github.com/lucascmpos/SharpCut-Barbers"
+        target="_blank"
+      >
+        <p>Feito por Lucas Campos</p>
+        <IoLogoGithub size={18} />
+      </a>
     </div>
   );
 };
