@@ -16,7 +16,6 @@ const BarbershopDetailsPage = async ({
 }: BarbershopDetailsPageProps) => {
   const session = await getServerSession(authOptions);
   if (!params.id) {
-    // TODO: redirecionar para home page
     return null;
   }
 
@@ -36,7 +35,7 @@ const BarbershopDetailsPage = async ({
   return (
     <div>
       <BarbershopInfo barbershop={barbershop} />
-      <div className="px-5 flex flex-col gap-4 py-6">
+      <div className="px-5 flex flex-col items-center gap-4 py-6">
         {barbershop.services.map((service: { id: Key | null | undefined }) => (
           <ServiceItem
             key={service.id}

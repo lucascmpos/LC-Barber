@@ -42,7 +42,7 @@ const Search = ({ defaultValues }: SearchProps) => {
   };
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center md:w-1/2 w-full gap-2">
       <Form {...form}>
         <form
           className="flex w-full gap-4"

@@ -40,20 +40,20 @@ export default async function Home() {
     <div>
       <Header />
 
-      <div className="px-5 pt-5">
-        <h2 className="text-xl font-bold">
+      <div className="px-5 pt-5  ">
+        <h2 className="text-xl font-bold md:flex md:justify-center  ">
           {session?.user
             ? `Olá, ${session.user.name?.split(" ")[0]}!`
             : "Olá, Vamos agendar um corte hoje?"}
         </h2>
-        <p className="capitalize text-sm">
+        <p className="capitalize text-sm md:flex md:justify-center ">
           {format(new Date(), "EEEE',' dd 'de' MMMM", {
             locale: ptBR,
           })}
         </p>
       </div>
 
-      <div className="px-5 mt-6">
+      <div className="px-5 mt-6 flex justify-center">
         <Search />
       </div>
 
@@ -79,7 +79,7 @@ export default async function Home() {
           Recomendados
         </h2>
 
-        <div className="flex px-5 gap-4 overflow-x-auto [&::-webkit-scrollbar]:hidden">
+        <div className="flex px-5 gap-4 overflow-x-auto [&::-webkit-scrollbar]:hidden md:flex-wrap items-center">
           {barbershops.map((barbershop: { id: Key | null | undefined }) => (
             <div key={barbershop.id} className="min-w-[167px] max-w-[167px]">
               <BarbershopItem key={barbershop.id} barbershop={barbershop} />
@@ -93,7 +93,7 @@ export default async function Home() {
           Populares
         </h2>
 
-        <div className="flex px-5 gap-4 overflow-x-auto [&::-webkit-scrollbar]:hidden">
+        <div className="flex px-5 gap-4 overflow-x-auto md:flex-wrap [&::-webkit-scrollbar]:hidden">
           {recommendedBarbershops.map(
             (barbershop: { id: Key | null | undefined }) => (
               <div key={barbershop.id} className="min-w-[167px] max-w-[167px]">
