@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="https://ik.imagekit.io/4qca61gsh/sharpcut.png?updatedAt=1714928214862">
+    <img src="https://ik.imagekit.io/4qca61gsh/Capture.PNG?updatedAt=1720056773778">
     
    
 </h1>
