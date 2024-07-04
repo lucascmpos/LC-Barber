@@ -6,7 +6,7 @@
 
 # Link to the app
 
-[SharpCut Barbers](https://sharpcut-barbers.vercel.app/)
+[Sharpcutz](https://sharpcut-barbers.vercel.app/)
 
 # 🔍 Summary
 
