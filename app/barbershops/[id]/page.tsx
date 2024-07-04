@@ -33,7 +33,7 @@ const BarbershopDetailsPage = async ({
   }
 
   return (
-    <div>
+    <div className="lg:container lg:mx-auto">
       <BarbershopInfo barbershop={barbershop} />
       <div className="px-5 flex flex-col items-center gap-4 py-6">
         {barbershop.services.map((service: { id: Key | null | undefined }) => (
