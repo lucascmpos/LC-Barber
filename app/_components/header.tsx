@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Card, CardContent } from "./ui/card";
-import { MenuIcon } from "lucide-react";
+import { MenuIcon, Scissors } from "lucide-react";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import SideMenu from "./side-menu";
@@ -12,11 +12,10 @@ const Header = () => {
     <Card>
       <CardContent className="p-5 justify-between flex flex-row">
         <Link href="/">
-          <div className="flex flex-row ">
-            <Image src="/scissor.png" alt="LC Barbers" height={20} width={30} />
-            <h1 className="font-bold md:text-2xl text-lg md:p-0 py-1 text-wrap flex uppercase">
-              <p className="font-extrabold text-red-800  mr-2">SharpCut </p>
-              Barbers
+          <div className="flex flex-row items-center ">
+            <Scissors size={30} className="text-primary" />
+            <h1 className="font-bold md:text-2xl text-lg md:p-0 py-1 text-wrap flex text-secondary-foreground ">
+              <p className="font-semi text-primary">Sharpcut</p>z
             </h1>
           </div>
         </Link>

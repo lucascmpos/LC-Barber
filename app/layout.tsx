@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Footer from "./_components/footer";
 import AuthProvider from "./_providers/auth";
 import { Toaster } from "./_components/ui/sonner";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
 
 export const metadata: Metadata = {
-  title: "SharpCut Barbers",
-  description: "SharpCut Barbers made by Lucas Campos",
+  title: "Sharpcutz",
+  description: "Booking barbershops platform",
 };
 
 export default function RootLayout({
@@ -19,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} dark`}>
+      <body className={`${poppins.className} dark`}>
         <AuthProvider>
           <div className="flex-1">{children}</div>
           <Toaster />
